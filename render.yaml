@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: relational-immortality-survey
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: ADMIN_SECRET
+        generateValue: true
+    disk:
+      name: survey-data
+      mountPath: /opt/render/project/src/data/responses
+      sizeGB: 1
