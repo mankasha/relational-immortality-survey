@@ -30,6 +30,7 @@ export interface SurveyAnswers {
   consented?: boolean;
   ageRange?: string;
   country?: string;
+  participantName?: string;
   gender?: string;
   religiousIdentity?: string;
   religionImportance?: number;

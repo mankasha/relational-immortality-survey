@@ -36,6 +36,7 @@ Scale note: Unless otherwise noted, 1–7 Likert items use: 1 = strongly disagre
 |----------|-------------|
 | `ans_ageRange` | Age range category (18-24, 25-34, etc.) |
 | `ans_country` | Free-text country/region |
+| `ans_participantName` | Optional free-text name (participant-provided) |
 | `ans_gender` | Optional free-text gender |
 | `ans_religiousIdentity` | religious, spiritual, agnostic, atheist, other, prefer_not |
 | `ans_religionImportance` | 1–7 importance of religion/spirituality |

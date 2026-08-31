@@ -96,7 +96,7 @@ export function StepRenderer({
         <div>
           {heading(
             PUBLIC_TITLE,
-            "You are invited to participate in a research survey about relationships, identity, mortality, bereavement, and beliefs about consciousness. Some questions concern death and loss. Participation is voluntary and anonymous — we do not collect names or email addresses."
+            "You are invited to participate in a research survey about relationships, identity, mortality, bereavement, and beliefs about consciousness. Some questions concern death and loss. Participation is voluntary. We do not collect email addresses. You may optionally provide your name in a later section."
           )}
           <div className="mb-6 rounded-xl border border-[#e8e4dc] bg-white p-4 text-sm leading-relaxed">
             <p className="mb-3">
@@ -133,7 +133,7 @@ export function StepRenderer({
     case "demographics":
       return (
         <div>
-          {heading("About you", "A few background questions. Gender is optional.")}
+          {heading("About you", "A few background questions. Name and gender are optional.")}
           {selectField(
             "Age range",
             "ageRange",
@@ -149,6 +149,19 @@ export function StepRenderer({
               onChange={(e) => updateAnswer("country", e.target.value)}
               placeholder="e.g. United States, UK, Canada"
               className="w-full rounded-xl border border-[#d4cfc4] bg-white px-4 py-3 text-sm"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="mb-2 block text-sm font-medium">
+              Name (optional)
+            </label>
+            <input
+              type="text"
+              value={answers.participantName ?? ""}
+              onChange={(e) => updateAnswer("participantName", e.target.value)}
+              placeholder="Optional — first name or nickname is fine"
+              className="w-full rounded-xl border border-[#d4cfc4] bg-white px-4 py-3 text-sm"
+              autoComplete="name"
             />
           </div>
           <div className="mb-4">

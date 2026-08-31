@@ -50,7 +50,7 @@ Responses save as individual JSON files in:
 data/responses/
 ```
 
-Each file is named with an anonymous participant ID. No names, emails, or IP addresses are collected.
+Each file is named with an anonymous participant ID. Names are optional (participant may leave blank). Email addresses and IP addresses are not collected.
 
 ---
 
