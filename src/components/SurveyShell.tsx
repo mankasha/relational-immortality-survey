@@ -27,6 +27,9 @@ export function SurveyShell({ children, progress, title }: SurveyShellProps) {
         </div>
       </header>
       <main className="mx-auto max-w-lg px-4 py-6 pb-24">{children}</main>
+      <footer className="fixed bottom-0 left-0 right-0 border-t border-[#e8e4dc] bg-[#f7f5f0]/95 py-2 text-center text-xs text-[#8a847c] backdrop-blur-sm">
+        <p>by mankasha</p>
+      </footer>
     </div>
   );
 }
